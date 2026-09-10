@@ -1,35 +1,82 @@
-const int potPin = 34; 
-const int ledPin = 2;  
+// Define el pin GPIO 34 del ESP32 donde está conectado el potenciómetro.
+const int potPin = 34;
 
+// Define el pin GPIO 2 donde está conectado el LED.
+const int ledPin = 2;
+
+
+// Define la frecuencia de la señal PWM en 5000 Hz.
 const int freq = 5000;
-const int resolution = 8; 
 
-// NUEVAS VARIABLES PARA EL CONTROL DE CAMBIOS
-int lastAdcValue = -1;    // Guardará el último valor registrado
-const int umbral = 30;    // Tolerancia para ignorar el "ruido" eléctrico
+// Define la resolución del PWM en 8 bits.
+// Con 8 bits podemos tener valores desde 0 hasta 255.
+const int resolution = 8;
+
+
+// Guarda el último valor del ADC que fue mostrado en el Monitor Serial.
+// Se inicializa en -1 para que la primera lectura pueda ser mostrada.
+int lastAdcValue = -1;
+
+// Define el umbral de cambio del valor ADC.
+// El Monitor Serial solo mostrará un nuevo valor si el cambio es mayor a 30.
+const int umbral = 30;
+
 
 void setup() {
+
+  // Inicia la comunicación entre el ESP32 y el computador.
+  // 115200 indica la velocidad de comunicación en baudios.
   Serial.begin(115200);
+
+  // Configura el pin del LED para utilizar PWM.
+  // Se establece una frecuencia de 5000 Hz y una resolución de 8 bits.
   ledcAttach(ledPin, freq, resolution);
 }
 
+
 void loop() {
-  int adcValue = analogRead(potPin); 
+
+  // Lee el valor analógico entregado por el potenciómetro.
+  // El ADC del ESP32 proporciona normalmente un valor entre 0 y 4095.
+  int adcValue = analogRead(potPin);
+
+  // Convierte el valor ADC de 0-4095 a un valor PWM de 0-255.
+  // Esto permite utilizar la lectura del potenciómetro para controlar
+  // el brillo del LED.
   int brightness = map(adcValue, 0, 4095, 0, 255);
-  
+
+
+  // Envía el valor de brillo al LED utilizando PWM.
+  // 0 significa LED apagado y 255 significa brillo máximo.
   ledcWrite(ledPin, brightness);
-  
-  // Condición: Si la diferencia entre el valor nuevo y el viejo es mayor al umbral
+
+
+  // Comprueba si el cambio entre el valor ADC actual y el último valor
+  // registrado es mayor que el umbral establecido.
   if (abs(adcValue - lastAdcValue) > umbral) {
-    
+
+    // Escribe en el Monitor Serial el texto "Valor ADC: ".
     Serial.print("Valor ADC: ");
+
+    // Muestra el valor actual leído por el ADC del ESP32.
     Serial.print(adcValue);
+
+    // Escribe un separador y el texto "Brillo LED: ".
     Serial.print(" | Brillo LED: ");
+
+    // Muestra el valor de brillo calculado entre 0 y 255.
+    // Serial.println también realiza un salto de línea.
     Serial.println(brightness);
-    
-    // Actualizamos el último valor para la siguiente comparación
-    lastAdcValue = adcValue; 
+
+
+    // Guarda el valor ADC actual como el último valor registrado.
+    // Este valor será utilizado para realizar la siguiente comparación.
+    lastAdcValue = adcValue;
   }
-  
-  delay(10); // Reduje el delay para que la respuesta sea más instantánea al girar
+
+
+  // Espera 10 milisegundos antes de volver a ejecutar el ciclo.
+  // Un valor pequeño permite que el LED responda rápidamente
+  // cuando se gira el potenciómetro.
+  delay(10);
 }
