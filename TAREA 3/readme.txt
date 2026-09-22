@@ -1,1 +1,12 @@
-
+Divisible12.py: https://colab.research.google.com/drive/1xCjPtxTlnipFv2joTwbVDk2bmemcaOPk
+Factorial.py: https://colab.research.google.com/drive/1Qie9A3f_GnP1-Lqmc3eM3bMFgcjRKYHM
+Homework.py; https://colab.research.google.com/drive/1hDgRAUxNvRVorIbGyTtLvi3vWg9bd4uI
+Impares.py: https://colab.research.google.com/drive/1VyFeX5UerSonsXAVPdWXSTLWSVn4QY0w
+LoopFor.py: https://colab.research.google.com/drive/1Qfviw6n10u550XOCBq6oCQPBi0x65_tI
+Number.py: https://colab.research.google.com/drive/186IFqKWt5pVW7HdNkVNrc_770S7gsh-b
+Primos.py: https://colab.research.google.com/drive/1Wq_fWDMX-L7KAea-cM2eYD1rfMIxlLg-
+Primos11.py: https://colab.research.google.com/drive/1CZOLKejCuYDlCIzJQtInLDIkh5x7W2l5
+Primos2.py: https://colab.research.google.com/drive/1yN5uCJ9uIfq0fs4uPnB8b3GnndvIHngA
+PrimosOpt.py: https://colab.research.google.com/drive/1WWoyni84IcUhxqYs7Cbdm7C8imEbjc-C
+Tryt.py: https://colab.research.google.com/drive/1fWtgjg0QgIhE35XKCLEe594w8eXlc5LN
+WhileLoop1.py: https://colab.research.google.com/drive/1l75o2oSATdKYCCpCDUUAo3FCPyJ01NHB
