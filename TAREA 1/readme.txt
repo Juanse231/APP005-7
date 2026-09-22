@@ -1,1 +1,19 @@
-
+Trabajo 1: https://colab.research.google.com/drive/16WxvVySNV2OcviTn-8u1KEKXLwekMYKM
+Trabajo 2: https://colab.research.google.com/drive/1TY879q8ONEGDns-HjKgFAWdTZeCut1Zt
+Trabajo 3: https://colab.research.google.com/drive/1Rww9D6w2R0HF_bsd2bd4qTGFBK--xyJO
+Trabajo 4: https://colab.research.google.com/drive/1U6NeBb56jCRjmvMGr7fuyuMqMkGTd1BN
+Trabajo 5: https://colab.research.google.com/drive/1gdIxotxmMqaBKHuxtvUgX8EAL4j6qZiW
+Trabajo 6: https://colab.research.google.com/drive/1mIpzz9BWdDZXz9YlLNKclis77zGP0KkX
+Trabajo 7: https://colab.research.google.com/drive/1w4CljyXNLirSFNVMwS0F5VvCOTZ8ozmg
+Trabajo 8: https://colab.research.google.com/drive/1V6UhWJngYXDXrX0Az41LFO5Lbl7cI8RI
+Trabajo 9: https://colab.research.google.com/drive/1W1D1WPlJXvLBHH8pLoI7XSsH56zkEm0Q
+Trabajo 10: https://colab.research.google.com/drive/17o8kYqjHZUrgGtShj1DsQHytFX25WcnY
+Trabajo 11: https://colab.research.google.com/drive/14qkK4v7xTDo4Ad-w6wC6s0_Dygy1-WWz
+Trabajo 12: https://colab.research.google.com/drive/1X2MLAcJc2oxWTcn3wyXeKV-JtsYfEpPz
+Trabajo 13: https://colab.research.google.com/drive/1yOrfAKUyGmkgWF4J7_kxzUu2YoXL1JoK 
+Trabajo 14: https://colab.research.google.com/drive/1z2AKwpSRy8mnUpETqA-gHSHpsdQCiTf8
+Trabajo 15: https://colab.research.google.com/drive/1HFRH7ZrBH-NZr4LvgiF8lyWvEQJZmRC_
+Trabajo 16: https://colab.research.google.com/drive/1FylTC0d--eaA4lOj323thHLTn_4VXP0-
+Trabajo 17: https://colab.research.google.com/drive/1oA3R1dtoBxvZWtxImTkD48X1FZotsQZn
+Trabajo 18: https://colab.research.google.com/drive/18WfjW_RtDLGRQMjL23hTOpiL4lB4VMCS
+Trabajo 19: https://colab.research.google.com/drive/1vHyCA2xgqicsiWUdwq3DnEgFJjWm9V_B
